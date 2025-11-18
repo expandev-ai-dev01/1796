@@ -1,1 +1,1 @@
-// Export domain components here
+export * from './GradeForm';

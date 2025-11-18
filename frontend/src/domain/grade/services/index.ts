@@ -1,1 +1,1 @@
-// Export domain services here
+export * from './gradeService';

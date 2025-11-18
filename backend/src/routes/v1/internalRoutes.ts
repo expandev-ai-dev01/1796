@@ -5,12 +5,14 @@
  */
 
 import { Router } from 'express';
+import gradeRoutes from './gradeRoutes';
 
 const router = Router();
 
-// Placeholder for internal routes
-// Example: router.use('/grades', gradeRoutes);
+// Mount feature-specific routes
+router.use('/grades', gradeRoutes);
 
+// Placeholder for other internal routes
 router.get('/', (req, res) => {
   res.json({ message: 'Internal API endpoint' });
 });

@@ -1,1 +1,1 @@
-// Export domain hooks here
+export * from './useCreateGrade';

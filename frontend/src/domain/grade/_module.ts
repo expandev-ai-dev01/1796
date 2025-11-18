@@ -5,15 +5,18 @@
  * @version 1.0.0
  */
 
-// Public exports will be added here as the domain is built out.
+export * from './services';
+export * from './hooks';
+export * from './components';
+export * from './types';
 
 export const moduleMetadata = {
   name: 'grade',
   domain: 'functional',
   version: '1.0.0',
-  publicComponents: [],
-  publicHooks: [],
-  publicServices: [],
+  publicComponents: ['GradeForm'],
+  publicHooks: ['useCreateGrade'],
+  publicServices: ['gradeService'],
   publicStores: [],
   dependencies: {
     internal: ['@/core/lib/api'],
@@ -21,11 +24,11 @@ export const moduleMetadata = {
     domains: [],
   },
   exports: {
-    components: [],
-    hooks: [],
-    services: [],
+    components: ['GradeForm'],
+    hooks: ['useCreateGrade'],
+    services: ['gradeService'],
     stores: [],
-    types: [],
+    types: ['Grade', 'CreateGradeDTO'],
     utils: [],
   },
 } as const;
